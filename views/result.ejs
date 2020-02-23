@@ -1,0 +1,8 @@
+<%- include("partials/header"); %>
+
+<img class="img-fluid weather-icon mt-1 pt-1" src="<%= weatherIcon %>" alt="weather icon" width="72" height="72" />
+<h1 class="h2 font-weight-light">Weather in <span class="font-weight-bold"><%= cityName %></span></h1>
+<p class="h2 font-weight-light"><span class="font-weight-normal"><%= temp %></span>&#8451;</p>
+<p class="h5 mb-5 font-weight-light"><%= description %></p>
+
+<%- include("partials/footer"); %>

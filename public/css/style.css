@@ -1,0 +1,88 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  /* display: -ms-flexbox;
+  display: flex; */
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: #222222;
+  color: #fffef6;
+  position: relative;
+}
+
+.form-search {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  padding-top: 0;
+  margin: auto;
+}
+
+.form-search .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-search .form-control:focus {
+  z-index: 2;
+}
+
+.weather-icon {
+  width: 10em;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+.footer a {
+  margin-top: 25px;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fffef6;
+}
+
+.search-button {
+  background-color: #222222;
+  color: #fffef6;
+}
+
+.form-control:focus {
+  border-color: #fffef6;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #fffef6;
+}
+
+/* DEFAULT DARK MODE -> SWITCH TO LIGHT MODE */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #fffef6;
+    color: #222222;
+  }
+
+  .search-button:hover {
+    background-color: #494949;
+    color: #fffef6;
+  }
+
+  .form-control:focus {
+    border-color: #222222;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #222222;
+  }
+}
